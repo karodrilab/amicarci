@@ -30,10 +30,10 @@ jobs:
           name: Install Dependencies
           command: . build/install.sh
       - run:
-          name: Login to Production
+          name: Login to PRUEBA
           command: . build/setup-prod.sh
       - run:
-          name: Deploy to Production
+          name: Deploy to PRUEBA
           command: . build/deploy-prod.sh
 workflows:
   validate:

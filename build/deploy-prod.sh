@@ -3,5 +3,5 @@ echo "Converting to MDAPI format..."
 sfdx force:source:convert -r ./src/ -d deploy_prod
 #Deploy to prod & run all tests
 echo "Deploying to production & running all tests..."
-#sfdx force:mdapi:deploy -u DevHub -d deploy_prod/ -w -1 -l RunAllTestsInOrg
-sfdx force:source:deploy -x C:/Users/karen/Documents/GitHub/amicarci/src/main/default/package.xml -g
+sfdx force:mdapi:deploy -u DevHub -d deploy_prod/ -w -1 -l RunAllTestsInOrg
+#sfdx force:source:deploy -x C:/Users/karen/Documents/GitHub/amicarci/src/main/default/package.xml -g

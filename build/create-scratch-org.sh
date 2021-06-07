@@ -9,4 +9,4 @@ sfdx force:auth:jwt:grant --clientid $SFDX_CONSUMER_KEY	 --jwtkeyfile JWT/server
 
 #Create a scratch org
 echo "Creating the Scratch Org..."
-sfdx force:org:create -f config/project-scratch-def.json -a ${amicarci} -s
+sfdx force:org:create -f config/project-scratch-def.json -a ${CIRCLE_BRANCH} -s

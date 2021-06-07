@@ -935,7 +935,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>GlobalValueSet</name>
+        <name>GlobalValueSets</name>
     </types>
     <types>
         <members>*</members>

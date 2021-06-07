@@ -3,5 +3,5 @@ echo "Converting to MDAPI format..."
 sfdx force:source:convert -d deploy_prod -r src
 #Deploy to prod & run all tests
 echo "Deploying to Desa & running all tests..."
-sfdx force:mdapi:deploy -u Nectia -d deploy_prod/ -w -1 -l RunAllTestsInOrg
+sfdx force:mdapi:deploy -u Nectia -d src/ -w -1 -l RunAllTestsInOrg
 #sfdx force:source:deploy -x C:/Users/karen/Documents/GitHub/amicarci/src/main/default/package.xml -g

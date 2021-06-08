@@ -42,7 +42,7 @@ workflows:
           filters:
             branches:
               ignore:
-                - master
+                - develop
       - deploy-prod:
           filters:
             branches:

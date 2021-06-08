@@ -4,5 +4,5 @@ sfdx force: mdapi:convert -r mdapipackage /
 #sfdx force:source:convert -d deploy_prod -r src
 #Deploy to prod & run all tests
 echo "Deploying to Desa & running all tests..."
-sfdx force:mdapi:deploy -u cloudsolutions -d deploy_prod/ -w -1 -l RunAllTestsInOrg
+sfdx force:mdapi:deploy -u amicar -d deploy_prod/ -w -1 -l RunAllTestsInOrg
 #sfdx force:source:deploy -x C:/Users/karen/Documents/GitHub/amicarci/src/main/default/package.xml -g

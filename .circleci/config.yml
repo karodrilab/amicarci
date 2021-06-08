@@ -32,9 +32,9 @@ jobs:
       - run:
           name: Login to PRUEBA
           command: . build/setup-prod.sh
-     # - run:
-      #    name: Deploy to PRUEBA
-       #   command: . build/deploy-prod.sh
+          - run:
+            name: Deploy to PRUEBA
+            command: . build/test.sh
 workflows:
   validate:
     jobs:

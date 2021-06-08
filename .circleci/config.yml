@@ -16,11 +16,10 @@ jobs:
       - run:
           name: Create Scratch Org
           command: . build/create-scratch-org.sh
-      - run:
-          name: Validate Components & Run Tests
-          command: . build/test.sh
-      - store_test_results:
-          path: test-results
+      #- run:
+          #name: Validate Components & Run Tests
+         #command: . build/test.sh
+      
   deploy-prod:
     docker:
     - image: circleci/node:latest
@@ -31,10 +30,12 @@ jobs:
           command: . build/install.sh
       - run:
           name: Login to PRUEBA
-          command: . build/setup-prod.sh
+          command: . build/setup-uat.sh
           - run:
             name: Deploy to PRUEBA
             command: . build/test.sh
+            - store_test_results:
+          path: test-results
 workflows:
   validate:
     jobs:

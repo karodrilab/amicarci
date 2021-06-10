@@ -32,9 +32,9 @@ jobs:
       - run:
           name: Login to PRUEBA
           command: . build/setup-prod.sh
-          #- run:
-           # name: Deploy to PRUEBA
-          #command: . build/deploy-prod.sh
+         # - run:
+          # name: Deploy to PRUEBA
+           #command: . build/deploy-prod.sh
 workflows:
   validate:
     jobs:
@@ -42,7 +42,7 @@ workflows:
           filters:
             branches:
               ignore:
-                - master
+                - develop
       - deploy-prod:
           filters:
             branches:
